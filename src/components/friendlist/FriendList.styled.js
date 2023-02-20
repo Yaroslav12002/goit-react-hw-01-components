@@ -39,4 +39,6 @@ export const FriendAvatar = styled.img`
   width: 48px;
 `;
 
-export const FriendName = styled.p``;
+export const FriendName = styled.p`
+  font-size: 32px;
+`;
