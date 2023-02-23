@@ -16,8 +16,7 @@ export const FriendItem = styled.li`
   gap: 20px;
   align-items: center;
   min-height: 100px;
-  margin-bottom: ${props =>
-    props.thisChild === props.lastChild ? '0px' : '15px'};
+  margin-bottom: 15px;
   padding: 0px 20px;
   background-color: ${props => props.backgroundColor};
   border-radius: 4px;
@@ -25,6 +24,9 @@ export const FriendItem = styled.li`
   transition: transform 500ms;
   &:hover {
     transform: scale(1.05);
+  }
+  &:last-child {
+    margin-bottom: 0px;
   }
 `;
 
